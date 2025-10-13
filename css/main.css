@@ -1,0 +1,23 @@
+/* color palette */
+:root {
+  --primary-color: #004E89;    /* Deep blue — trust, clarity */
+  --secondary-color: #00A6FB;  /* Light blue — freshness */
+  --accent-color: #F4D35E;     /* Soft gold — luxury touch */
+  --background-color: #F9FAFB; /* Clean light background */
+  --text-color: #1E1E1E;       /* Dark readable text */
+  --border-color: #DCE3E8;     /* Subtle line color */
+}
+
+/* Body */ 
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
