@@ -21,6 +21,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--background-color);
+    overflow-x: hidden;
 }
 
 /* Loader */
@@ -640,4 +641,43 @@ body {
         min-width: unset;
         width: 100%;
     }
+}
+
+/* ====================================================================== Why us =================================================== */
+.why-us {
+    background-color: var(--primary-color);
+    padding: 40px 0;
+    color: var(--background-color);
+    overflow-x: hidden;
+}
+
+.why-us .row {
+    text-align: center;
+    padding: 0 20px;
+    margin-top: 40px;
+}
+
+.why .icon {
+    color: var(--secondary-color);
+    font-size: 40px;
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    border-radius: 50px;
+    background-color: var(--background-color);
+    margin-bottom: 15px;
+    transition: .5s ease;
+}
+
+.why h3 {
+    font-family: var(--heading-font);
+}
+
+.why p {
+    opacity: .8;
+}
+
+.why:hover .icon {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
 }
