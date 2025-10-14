@@ -23,16 +23,51 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <h1>This is the testing header</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolor porro quisquam voluptatem, iusto, repellat inventore odit quasi illum id, velit omnis eius nesciunt necessitatibus! Recusandae perferendis explicabo exercitationem libero!</p>
+    <!-- loader -->
+    <span class="loader"></span>
+
+    <!-- content -->
+    <div class="content">
+
+        <!-- Navbar -->
+        <nav class="navbar">
+            <a href="" class="logo">
+                <i class="fa-solid fa-glasses"></i>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="" class="active">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="mobile-menu">
+                <a href="" class="active"><i class="fas fa-home"></i> Accueil</a>
+                <a href="#about"><i class="fas fa-user"></i> À propos</a>
+                <a href="#services"><i class="fas fa-cog"></i> Services</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </nav>
+        <!-- /end Navbar -->
+
     </div>
+    <!-- /end content -->
 
     <!-- Bootstrap Js -->
     <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
     <!-- Aos js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="aos.js"></script>
+    <script src="js/aos.js"></script>
+    <!-- Loader -->
+    <script src="js/loader.js"></script>
+    <!-- Menu -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
