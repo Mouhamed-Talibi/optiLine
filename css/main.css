@@ -294,6 +294,19 @@ body {
     font-family: var(--heading-font);
     font-weight: 900;
     text-transform: capitalize;
+    animation: float 3s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .landing-text h1 span {
@@ -910,6 +923,7 @@ footer {
     padding: 40px 0;
     background-color: var(--text-color);
     color: var(--background-color);
+    overflow-x: hidden;
 }
 
 footer .logo-desc .foot-logo {
