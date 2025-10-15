@@ -906,3 +906,120 @@ body {
 }
 
 /* ========================================================= Footer ================================================================ */
+footer {
+    padding: 40px 0;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+footer .logo-desc .foot-logo {
+    margin-bottom: 20px;
+}
+
+footer .logo-desc .foot-logo i{
+    font-size: 50px;
+    color: var(--accent-color);
+}
+
+.logo-desc .description {
+    color: #b6b5b5;
+}
+
+.logo-desc .description strong {
+    color: var(--accent-color);
+}
+
+footer .quick-links h3,
+footer .contact-infos h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+footer .quick-links .links {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+footer .quick-links .links a {
+    text-decoration: none;
+    color: #b6b5b5;
+    transition: .5s ease;
+}
+
+footer .quick-links .links a:hover {
+    color: var(--accent-color);
+    transform: translateX(3px);
+}
+
+footer .contact-infos .infos div {
+    padding: 10px 12px;
+    background-color: #222121;
+    margin: 10px 0;
+    width: 70%;
+    border-radius: 10px;
+    color: #b6b5b5;
+    font-family: var(--heading-font);
+    transition: .3s ease;
+}
+
+footer .contact-infos .infos div:hover {
+    color: var(--border-color);
+}
+
+@media (max-width: 768px) {
+    footer .contact-infos .infos div {
+        width: 100%;
+        text-align: start;
+    }
+}
+
+footer .contact-infos .infos div i {
+    color: var(--accent-color);
+    font-size: 20px;
+    margin-right: 10px;
+    transition: .4s ease;
+}
+
+footer .contact-infos .infos div:hover i {
+    color: var(--secondary-color);
+}
+
+.rights .copyright strong {
+    color: var(--secondary-color);
+}
+
+.rights .social-links a {
+    text-decoration: none;
+}
+
+.rights .social-links a {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    font-size: 22px;
+}
+
+.rights .social-links .facebook,
+.rights .social-links .instagram {
+    transition: .4s ease;
+}
+
+.rights .social-links .facebook:hover,
+.rights .social-links .instagram:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+@media (max-width: 768px) {
+    .rights {
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        gap: 15px;
+    }
+}
