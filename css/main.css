@@ -1,5 +1,6 @@
 /* color palette */
 :root {
+    --dark-blue: #043c66;
     --primary-color: #004E89;    /* Deep blue — trust, clarity */
     --secondary-color: #00A6FB;  /* Light blue — freshness */
     --accent-color: #f4d35e;     /* Soft gold — luxury touch */
@@ -1098,3 +1099,84 @@ footer .contact-infos .infos div:hover i {
         margin-bottom: 15px;
     }
 }
+
+/* ================================================================= Services ==================================================== */
+.service-card {
+    border: 1px solid var(--border-color);
+    position: relative;
+    transition: 0.4s ease;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+/* Overlay */
+.service-card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 0;
+    width: 100%;
+    background-color: var(--dark-blue);
+    border-radius: 15px;
+    z-index: 0;
+    transition: height 0.4s ease;
+}
+
+/* Hover effect */
+.service-card:hover::before {
+    height: 100%;
+}
+
+/* Active (always highlighted) */
+.service-card.active::before {
+    height: 100%;
+}
+
+/* Ensure content stays above overlay */
+.service-card * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Icon */
+.service-card i {
+    color: var(--accent-color);
+    font-size: 2rem;
+    transition: color 0.4s ease;
+}
+
+.service-card h5 {
+    font-weight: bolder;
+    margin-top: 10px;
+    transition: color 0.4s ease;
+}
+
+.service-card p {
+    color: #797575;
+    transition: color 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-card.active {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-6px);
+}
+
+.service-card:hover h5,
+.service-card:hover p,
+.service-card.active h5,
+.service-card.active p {
+    color: var(--background-color);
+}
+
+.service-card.active i,
+.service-card:hover i {
+    color: var(--accent-color);
+}
+
