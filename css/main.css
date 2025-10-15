@@ -1037,3 +1037,64 @@ footer .contact-infos .infos div:hover i {
         gap: 15px;
     }
 }
+
+/* ================================================================== About page ================================================= */
+.about-page {
+    overflow-x: hidden;
+}
+
+.about-page-image img {
+    height: 400px;
+    width: 95%;
+}
+
+.about-page-text h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-page-text h1 span {
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+.about-page-text p {
+    line-height: 1.8;
+    letter-spacing: 1.4;
+}
+
+.about-page-text p .brand-name {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.about-page-text p .special {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.about-page-text .vision {
+    font-family: var(--heading-font);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.about-page-text .counter {
+    transition: all .4s ease;
+}
+
+@media (max-width: 768px) {
+    .about-page-text h1 {
+        width: 300px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    .about-page-text p {
+        width: 450px;
+        text-align: start;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
