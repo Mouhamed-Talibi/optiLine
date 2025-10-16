@@ -1354,3 +1354,31 @@ footer .contact-infos .infos div:hover i {
         margin: auto;
     }
 }
+
+.contact-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.contact-map iframe {
+    width: 80%;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    transition: .5s ease;
+}
+
+.contact-map iframe:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-map iframe {
+        width: 95%;
+        height: 300px;
+    }
+}
