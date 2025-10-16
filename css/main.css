@@ -1047,7 +1047,35 @@ footer .contact-infos .infos div:hover i {
 .about-page-image img {
     height: 400px;
     width: 95%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    animation: sweetFloat 6s ease-in-out infinite;
 }
+
+/* Sweet animation */
+@keyframes sweetFloat {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    25% {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    }
+    50% {
+        transform: translateY(0);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    75% {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+
 
 .about-page-text h1 {
     font-weight: bold;
@@ -1093,10 +1121,22 @@ footer .contact-infos .infos div:hover i {
     }
 
     .about-page-text p {
-        width: 450px;
+        width: 400px;
         text-align: start;
         margin: auto;
         margin-bottom: 15px;
+    }
+
+    .about-page-text .vision {
+        width: 400px;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-page-image img {
+        height: 300px;
     }
 }
 
@@ -1180,3 +1220,137 @@ footer .contact-infos .infos div:hover i {
     color: var(--accent-color);
 }
 
+/* ============================================================= Contact Us ====================================================== */
+.contact-page {
+    background-color: var(--border-color);
+    overflow-x: hidden;
+    padding: 40px 0;
+}
+
+.contact-page-text .main {
+    line-height: 1.6;
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    color: var(--dark-blue);
+}
+
+.contact-page-text .links .link .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    margin-bottom: 10px;
+    transition: .4s ease;
+}
+
+.contact-page-text .links .link .icon:hover {
+    transform: translateY(-3px) scale(1.02);
+    background-color: var(--secondary-color);
+}
+
+.contact-page-text .links .link p  {
+    display: inline;
+    margin-left: 7px;
+    font-style: italic;
+}
+
+.contact-page form {
+    background-color: var(--background-color);
+    padding: 15px 25px;
+    border-radius: 20px;
+}
+
+.contact-page-text .links.follow {
+    margin-top: 25px;
+}
+
+.contact-page-text .links.follow h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-page-text .links.follow .social-icons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.contact-page-text .links.follow .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.contact-page-text .links.follow .icon:hover {
+    transform: scale(1.1);
+    background-color: #0d6efd;
+}
+
+.contact-page-content form input,
+.contact-page-content form textarea {
+    width: 100%;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 12px 18px;
+    font-size: 15px;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.contact-page-content form input::placeholder,
+.contact-page-content form textarea::placeholder {
+    opacity: 0.8;
+    color: #888;
+}
+
+.contact-page-content form input:focus,
+.contact-page-content form textarea:focus {
+    border: 1px solid var(--accent-color);
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(230, 216, 28, 0.9);
+}
+
+.contact-page-content form textarea {
+    resize: none;
+    min-height: 120px;
+}
+
+@media (max-width: 768px) {
+    .contact-page-text .links,
+    .contact-page-text .links.follow .social-icons {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-page-text .link {
+        justify-content: center;
+    }
+
+    .contact-page-text .links.follow h3 {
+        text-align: center;
+    }
+
+    .contact-page-text .links.follow .social-icons {
+        justify-content: center;
+    }
+
+    .contact-page-content form {
+        margin-top: 25px;
+        width: 90%;
+        margin: auto;
+    }
+}
