@@ -1228,7 +1228,6 @@ footer .contact-infos .infos div:hover i {
     background-color: #fff;
 }
 
-/* Overlay */
 .service-card::before {
     content: "";
     position: absolute;
@@ -1242,23 +1241,19 @@ footer .contact-infos .infos div:hover i {
     transition: width 0.4s ease;
 }
 
-/* Hover effect */
 .service-card:hover::before {
     width: 100%;
 }
 
-/* Active (always highlighted) */
 .service-card.active::before {
     width: 100%;
 }
 
-/* Ensure content stays above overlay */
 .service-card * {
     position: relative;
     z-index: 1;
 }
 
-/* Icon */
 .service-card i {
     color: var(--dark-blue);
     font-size: 2rem;
@@ -1430,6 +1425,12 @@ footer .contact-infos .infos div:hover i {
         margin-top: 25px;
         width: 90%;
         margin: auto;
+    }
+
+    .contact-page-text .main {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
     }
 }
 
